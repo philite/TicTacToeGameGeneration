@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe Game Generation</string>
+    <!-- Init game fragment  -->
+    <string name="dimension_input">Dimension</string>
+    <string name="dimension_input_hint">3</string>
+    <string name="start_button">Start Game</string>
+    <string name="error_input">Dimension input must be more than 1</string>
+
+    <!-- Game fragment  -->
+    <string name="game_turn">Turn: </string>
+    <string name="player_turn">Player Turn: </string>
+    <string name="game_verdict">Result = </string>
+    <string name="game_finished_dialog_button_play_again">Play again</string>
+    <string name="game_finished_dialog_button_back">Go back to home screen</string>
+</resources>

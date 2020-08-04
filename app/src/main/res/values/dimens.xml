@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="input_width">150dp</dimen>
+
+    <!-- Margin and padding -->
+    <dimen name="smaller_4dp">4dp</dimen>
+    <dimen name="small_8dp">8dp</dimen>
+    <dimen name="normal_16dp">16dp</dimen>
+    <dimen name="large_24dp">24dp</dimen>
+    <dimen name="larger_48dp">48dp</dimen>
+
+    <!-- Corner -->
+    <dimen name="corners_4dp">4dp</dimen>
+    <!-- Border -->
+    <dimen name="border_3dp">3dp</dimen>
+
+    <!-- Board Size -->
+    <dimen name="width_board_dimen">400dp</dimen>
+    <dimen name="height_board_dimen">450dp</dimen>
+
+    <!-- Item Size -->
+    <dimen name="board_item_dimen">40dp</dimen>
+
+</resources>

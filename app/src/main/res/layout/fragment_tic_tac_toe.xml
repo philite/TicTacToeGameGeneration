@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="boardViewModel"
+            type="com.philite.tictactoeGameGeneration.viewmodel.BoardViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/playerTurnValueTextView"
+            android:text="@{boardViewModel.gameUiLiveData.player}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_8dp"
+            android:layout_marginTop="@dimen/normal_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/player_turn" />
+
+        <TextView
+            android:id="@+id/turnValueTextView"
+            android:text="@{boardViewModel.gameUiLiveData.turn}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_16dp"
+            android:layout_marginEnd="@dimen/normal_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/game_turn" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ticTacToe_recyclerView"
+            android:layout_width="@dimen/width_board_dimen"
+            android:layout_height="@dimen/height_board_dimen"
+            android:layout_marginTop="@dimen/larger_48dp"
+            android:layout_marginBottom="@dimen/large_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
